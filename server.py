@@ -10,7 +10,7 @@ signal.signal(signal.SIGINT, handle_signal)
 
 app = flask.Flask('app server')
 
-@app.route('/')
+@app.route('/api/v1/hello')
 def index():
     return 'Hello stopsignal'
 
